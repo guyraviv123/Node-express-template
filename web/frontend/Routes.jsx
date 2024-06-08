@@ -17,6 +17,7 @@ import { Routes as ReactRouterRoutes, Route } from 'react-router-dom';
  */
 export default function Routes({ pages }) {
 	const routes = useRoutes(pages);
+	console.log("routes11",routes); 
 	const routeComponents = routes.map(({ path, component: Component }) => (
 		<Route key={path} path={path} element={<Component />} />
 	));

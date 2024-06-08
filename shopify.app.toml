@@ -1,3 +1,28 @@
-# This file stores configurations for your Shopify app.
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
+name = "boa-ideas-home-assignment"
+client_id = "7ac3cce9d20baf38aa454deb9e4fdcac"
+application_url = "https://rebound-synthetic-characterized-enhance.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
 scopes = "read_customers"
+
+[auth]
+redirect_urls = [
+  "https://rebound-synthetic-characterized-enhance.trycloudflare.com/auth/callback",
+  "https://rebound-synthetic-characterized-enhance.trycloudflare.com/auth/shopify/callback",
+  "https://rebound-synthetic-characterized-enhance.trycloudflare.com/api/auth/callback",
+  "https://rebound-synthetic-characterized-enhance.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "home-assignment-60.myshopify.com"
