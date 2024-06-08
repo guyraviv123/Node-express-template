@@ -49,7 +49,7 @@ function Extension() {
       setCartData(cart);   
       setCustomerId(customerIdNumber);
     }
-  }, [cart, CustomerId, extensionApi]);
+  }, [cart, Customer_Id.id,extensionApi]);
 
   const handleSaveCart = async () => {
     try {
